@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loop example </title>
+</head>
+<body>
+{% for country in countries %}
+    <table>
+    {% for city in country.city_list %}
+        <tr>
+        <td>Country # {{ forloop.parentloop.counter}}</td>
+        <td>City#{{ forloop.counter }}</td>
+        <td>{{ city }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+    {% empty %}
+    <p>There are no country</p>
+{% endfor %}
+
+</body>
+</html>
+

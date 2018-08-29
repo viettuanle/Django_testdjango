@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello </title>
+</head>
+<body>
+<h1>{{ text | truncatechars:14}} </h1>
+
+<h2>You have {{ count}} message{{ count|pluralize }}. </h2>
+<h2>You have {{ number}} walrus{{ number|pluralize:"es"}}. </h2>
+<h2>You have {{ number}} cherr{{ number|pluralize:"y,ies"}}. </h2>
+</body>
+</html>
+
